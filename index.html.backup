@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Poorya Zaremoodi - Senior Principal Applied Scientist specializing in AI and Machine Learning">
+    <meta name="author" content="Poorya Zaremoodi">
+    <title>Poorya Zaremoodi, PhD</title>
+    <link rel="shortcut icon" href="img/fav.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #3b82f6;
+            --primary-dark: #2563eb;
+            --primary-light: #60a5fa;
+            --accent-color: #8b5cf6;
+            --accent-light: #a78bfa;
+            --success-color: #10b981;
+            --text-dark: #0f172a;
+            --text-medium: #475569;
+            --text-light: #64748b;
+            --bg-gradient-start: #0f172a;
+            --bg-gradient-end: #1e3a8a;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: linear-gradient(180deg, #f8fafc 0%, #e0e7ff 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Animated background pattern */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        /* Hero Header with animated gradient */
+        header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #3b82f6 100%);
+            background-size: 200% 200%;
+            animation: gradientShift 15s ease infinite;
+            color: white;
+            padding: 100px 0 120px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Floating geometric shapes */
+        header::before, header::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        header::before {
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.4) 0%, transparent 70%);
+            top: -100px;
+            left: -100px;
+        }
+
+        header::after {
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.4) 0%, transparent 70%);
+            bottom: -50px;
+            right: -50px;
+            animation-delay: 2s;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.75rem;
+            color: #cbd5e1;
+            margin-bottom: 24px;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+        }
+
+        .bio {
+            font-size: 1.2rem;
+            color: #e0e7ff;
+            max-width: 850px;
+            line-height: 1.9;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        /* Premium glass buttons */
+        .links {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 28px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1.5px solid rgba(255, 255, 255, 0.25);
+            border-radius: 12px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .links a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .links a:hover::before {
+            left: 100%;
+        }
+
+        .links a:hover {
+            background: rgba(255, 255, 255, 0.25);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Main content with overlap */
+        main {
+            margin-top: -60px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Premium card sections */
+        section {
+            background: var(--card-bg);
+            border-radius: 24px;
+            padding: 56px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.02);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color), var(--primary-color));
+            background-size: 200% 100%;
+            animation: shimmer 3s linear infinite;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+        section:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 60px rgba(59, 130, 246, 0.15), 0 0 0 1px rgba(59, 130, 246, 0.1);
+        }
+
+        h2 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            margin-bottom: 40px;
+            color: var(--text-dark);
+            position: relative;
+            padding-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 80px;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            border-radius: 3px;
+            box-shadow: 0 2px 10px rgba(59, 130, 246, 0.4);
+        }
+
+        /* Stats badge with animation */
+        .badge {
+            display: inline-block;
+            padding: 8px 18px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            border-radius: 24px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-right: 12px;
+            margin-bottom: 12px;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .badge::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transform: rotate(45deg);
+            animation: badge-shine 3s infinite;
+        }
+
+        @keyframes badge-shine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        /* Patents & Publications */
+        .summary-text {
+            color: var(--text-medium);
+            font-size: 1.15rem;
+            line-height: 1.9;
+            font-weight: 400;
+        }
+
+        .summary-text a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .summary-text a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            transition: width 0.3s;
+        }
+
+        .summary-text a:hover::after {
+            width: 100%;
+        }
+
+        /* Enhanced Publications */
+        .publication {
+            padding: 24px;
+            margin-bottom: 24px;
+            border-left: 4px solid transparent;
+            background: linear-gradient(white, white) padding-box,
+                       linear-gradient(135deg, var(--primary-color), var(--accent-color)) border-box;
+            border-left: 4px solid;
+            border-image: linear-gradient(135deg, var(--primary-color), var(--accent-color)) 1;
+            border-radius: 8px;
+            background: linear-gradient(90deg, rgba(59, 130, 246, 0.03) 0%, transparent 50%);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .publication::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .publication:hover {
+            background: linear-gradient(90deg, rgba(59, 130, 246, 0.08) 0%, rgba(139, 92, 246, 0.04) 100%);
+            transform: translateX(8px);
+            box-shadow: -4px 0 20px rgba(59, 130, 246, 0.1);
+        }
+
+        .publication:hover::before {
+            opacity: 1;
+        }
+
+        .publication-title {
+            color: var(--text-dark);
+            font-weight: 700;
+            font-size: 1.08rem;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .publication-title a {
+            color: var(--text-dark);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .publication-title a:hover {
+            color: var(--primary-color);
+        }
+
+        .publication-meta {
+            color: var(--text-light);
+            font-size: 0.96rem;
+            font-weight: 400;
+        }
+
+        .publication-meta .author {
+            color: var(--text-medium);
+            font-weight: 600;
+        }
+
+        .publication-meta .venue {
+            color: var(--primary-color);
+            font-weight: 700;
+            padding: 2px 8px;
+            background: rgba(59, 130, 246, 0.1);
+            border-radius: 4px;
+        }
+
+        /* Premium About Cards */
+        .about-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 28px;
+        }
+
+        .about-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+            padding: 32px;
+            border-radius: 16px;
+            border: 2px solid rgba(59, 130, 246, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-section::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            border-radius: 16px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: -1;
+        }
+
+        .about-section:hover::before {
+            opacity: 1;
+        }
+
+        .about-section:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
+            background: white;
+        }
+
+        .about-section h3 {
+            font-size: 1.35rem;
+            font-weight: 800;
+            margin-bottom: 14px;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .about-section p {
+            color: var(--text-medium);
+            line-height: 1.8;
+            font-weight: 400;
+        }
+
+        /* Premium Contact Card */
+        .contact-info {
+            color: var(--text-medium);
+            font-size: 1.15rem;
+            padding: 32px;
+            background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+            border-radius: 16px;
+            border: 3px solid var(--primary-light);
+            font-weight: 500;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-info::before {
+            content: '✉️';
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 4rem;
+            opacity: 0.1;
+        }
+
+        .contact-info a {
+            color: var(--primary-dark);
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Premium Footer */
+        footer {
+            padding: 80px 0;
+            text-align: center;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-top: 60px;
+            position: relative;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.5), transparent);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.75rem;
+            }
+
+            .subtitle {
+                font-size: 1.35rem;
+            }
+
+            section {
+                padding: 40px 28px;
+            }
+
+            h2 {
+                font-size: 1.85rem;
+            }
+
+            header {
+                padding: 80px 0 100px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Fade in animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section {
+            animation: fadeInUp 0.8s ease-out;
+            animation-fill-mode: both;
+        }
+
+        section:nth-child(1) { animation-delay: 0.1s; }
+        section:nth-child(2) { animation-delay: 0.2s; }
+        section:nth-child(3) { animation-delay: 0.3s; }
+        section:nth-child(4) { animation-delay: 0.4s; }
+    </style>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119192057-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-119192057-1');
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Poorya Zaremoodi, PhD</h1>
+                <p class="subtitle">Senior Principal Applied Scientist @ Oracle AI</p>
+                <p class="bio">AI leader with PhD in AI and 12+ years of experience building and deploying enterprise AI solutions. Specializing in generative AI, large language models, and scalable AI systems.</p>
+                <div class="links">
+                    <a href="https://scholar.google.com.au/citations?user=e3clInAAAAAJ&hl=en&oi=ao" target="_blank">
+                        📚 Google Scholar
+                    </a>
+                    <a href="https://github.com/pooryapzm" target="_blank">
+                        💻 GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/pooryazare" target="_blank">
+                        👔 LinkedIn
+                    </a>
+                    <a href="https://patents.justia.com/inventor/poorya-zaremoodi" target="_blank">
+                        🔬 Patents
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="expertise">
+                <h2>Expertise</h2>
+                <div class="about-content">
+                    <div class="about-section">
+                        <h3><span>🤖</span> Generative AI</h3>
+                        <p>Leading development of enterprise GenAI services including AI agents, code assistance, and intelligent automation. Expert in agent frameworks, flow-based architectures, and agentic systems.</p>
+                    </div>
+                    <div class="about-section">
+                        <h3><span>⚡</span> LLM Engineering</h3>
+                        <p>Deep expertise in fine-tuning large language models, prompt engineering, and RAG systems. Reduced LLM fine-tuning time from months to days while achieving production-grade performance.</p>
+                    </div>
+                    <div class="about-section">
+                        <h3><span>🚀</span> AI Leadership</h3>
+                        <p>Built and led teams of up to 22 AI scientists delivering production AI services with 97% precision. Track record of driving AI roadmap across 100+ projects in healthcare, analytics, and enterprise solutions.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="patents">
+                <h2>Patents</h2>
+                <p class="summary-text">
+                    <span class="badge">40+ Patents</span>
+                    <a href="https://patents.justia.com/inventor/poorya-zaremoodi" target="_blank">AI-related patents</a> filed or granted, including contributions to generative AI, large language models, and deep learning technologies.
+                </p>
+            </section>
+
+            <section id="publications">
+                <h2>Publications</h2>
+                <p class="summary-text">
+                    Research publications in top-tier AI and NLP conferences including <span class="venue">ACL</span>, <span class="venue">NAACL</span>, and <span class="venue">EMNLP</span>, focusing on neural machine translation, multi-task learning, and deep learning.
+                    <br><br>
+                    Full publication list available on <a href="https://scholar.google.com.au/citations?user=e3clInAAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>.
+                </p>
+            </section>
+
+            <section id="about">
+                <h2>About</h2>
+                <div class="about-content">
+                    <div class="about-section">
+                        <h3><span>🚀</span> Current Work</h3>
+                        <p>I lead AI development initiatives at Oracle, specializing in generative AI solutions. My work focuses on building enterprise AI applications including AI agents, LLM-powered tools, and scalable AI systems.</p>
+                    </div>
+                    <div class="about-section">
+                        <h3><span>🎓</span> Background</h3>
+                        <p>PhD in AI with expertise in Deep Learning and Natural Language Processing. Track record of publications in top-tier conferences and 40+ AI-related patents.</p>
+                    </div>
+                    <div class="about-section">
+                        <h3><span>💡</span> Philosophy</h3>
+                        <p>As Einstein said, "Life is like riding a bicycle". So I try to keep moving.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p class="contact-info">
+                    📧 Email: <a href="mailto:poorya.zaremoodi@gmail.com">poorya.zaremoodi@gmail.com</a>
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Last update: November 2025 · © <script>document.write(new Date().getFullYear());</script> Poorya Zaremoodi</p>
+        </div>
+    </footer>
+</body>
+</html>

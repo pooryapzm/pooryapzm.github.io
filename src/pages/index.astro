@@ -1,0 +1,755 @@
+---
+// Astro component for Poorya Zaremoodi's portfolio
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Poorya Zaremoodi - Senior Principal Applied Scientist specializing in AI and Machine Learning">
+    <meta name="author" content="Poorya Zaremoodi">
+    <title>Poorya Zaremoodi, PhD - AI Leader</title>
+    <link rel="icon" type="image/png" href="/img/fav.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119192057-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-119192057-1');
+    </script>
+</head>
+<body>
+    <!-- Animated background grid -->
+    <div class="bg-grid"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                Available for collaboration
+            </div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Poorya Zaremoodi</span>
+            </h1>
+            <div class="hero-role">Senior Principal Applied Scientist @ Oracle AI</div>
+            <p class="hero-bio">
+                Building the future of enterprise AI with <span class="highlight">generative AI</span>,
+                <span class="highlight">large language models</span>, and <span class="highlight">agentic systems</span>.
+                12+ years turning research into production impact.
+            </p>
+
+            <!-- Social Links with icons -->
+            <div class="social-links">
+                <a href="https://github.com/pooryapzm" target="_blank" rel="noopener" class="social-link github">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/pooryazare" target="_blank" rel="noopener" class="social-link linkedin">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    LinkedIn
+                </a>
+                <a href="https://scholar.google.com.au/citations?user=e3clInAAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" class="social-link scholar">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+                    Scholar
+                </a>
+                <a href="https://patents.justia.com/inventor/poorya-zaremoodi" target="_blank" rel="noopener" class="social-link patents">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 12h8v2H8v-2zm0 4h8v2H8v-2z"/></svg>
+                    Patents
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content - Bento Grid Layout -->
+    <main class="container">
+        <div class="bento-grid">
+
+            <!-- Expertise Cards - Spans 2 columns -->
+            <div class="bento-item span-2 expertise-grid">
+                <h2 class="section-title">Core Expertise</h2>
+                <div class="expertise-cards">
+                    <div class="expertise-card genai">
+                        <div class="card-icon">🤖</div>
+                        <h3>Generative AI</h3>
+                        <p>Architecting enterprise GenAI solutions: AI agents, code assistance, RAG systems. Expert in LangGraph, AutoGen, MCP, and flow-based architectures.</p>
+                        <div class="tech-stack">
+                            <span>Agent Frameworks</span>
+                            <span>RAG</span>
+                            <span>MCP</span>
+                        </div>
+                    </div>
+                    <div class="expertise-card llm">
+                        <div class="card-icon">⚡</div>
+                        <h3>LLM Engineering</h3>
+                        <p>Fine-tuning at scale with LoRA/QLoRA. Built distributed training framework reducing 70B model fine-tuning from months to days.</p>
+                        <div class="tech-stack">
+                            <span>Fine-tuning</span>
+                            <span>Prompt Engineering</span>
+                            <span>Optimization</span>
+                        </div>
+                    </div>
+                    <div class="expertise-card leadership">
+                        <div class="card-icon">🚀</div>
+                        <h3>Technical Leadership</h3>
+                        <p>Led teams of 22+ AI scientists. Drove Oracle AI roadmap across 100+ projects achieving 97% precision in production.</p>
+                        <div class="tech-stack">
+                            <span>Team Leadership</span>
+                            <span>Architecture</span>
+                            <span>Mentorship</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Card -->
+            <div class="bento-item stats-card">
+                <div class="stat-badge featured">40+</div>
+                <h3>Patents</h3>
+                <p>AI-related patents in GenAI, LLMs, and deep learning</p>
+                <a href="https://patents.justia.com/inventor/poorya-zaremoodi" target="_blank" class="inline-link">View all patents →</a>
+            </div>
+
+            <!-- Publications Card -->
+            <div class="bento-item publications-card">
+                <div class="pub-header">
+                    <h3>Publications</h3>
+                    <div class="conference-badges">
+                        <span class="conf-badge">ACL</span>
+                        <span class="conf-badge">NAACL</span>
+                        <span class="conf-badge">EMNLP</span>
+                    </div>
+                </div>
+                <p>Research in neural machine translation, multi-task learning, and deep learning architectures.</p>
+                <a href="https://scholar.google.com.au/citations?user=e3clInAAAAAJ&hl=en&oi=ao" target="_blank" class="inline-link">Google Scholar →</a>
+            </div>
+
+            <!-- About Card -->
+            <div class="bento-item about-card span-2">
+                <h3>Background</h3>
+                <div class="about-content">
+                    <div class="about-item">
+                        <span class="about-icon">🎓</span>
+                        <div>
+                            <strong>PhD in AI</strong>
+                            <p>Monash University & CSIRO Data61</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <span class="about-icon">🏆</span>
+                        <div>
+                            <strong>Distinguished Talent</strong>
+                            <p>Australian Visa Recognition</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <span class="about-icon">💡</span>
+                        <div>
+                            <strong>Philosophy</strong>
+                            <p>"Life is like riding a bicycle" - Keep moving</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Card -->
+            <div class="bento-item contact-card">
+                <h3>Get in Touch</h3>
+                <div class="contact-methods">
+                    <a href="mailto:poorya.zaremoodi@gmail.com" class="contact-method">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>poorya.zaremoodi@gmail.com</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>© {new Date().getFullYear()} Poorya Zaremoodi · Building the future of AI</p>
+                <p class="footer-meta">Last updated November 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Modern color palette */
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #14141f;
+            --bg-tertiary: #1e1e2e;
+            --accent-cyan: #00d4ff;
+            --accent-purple: #a855f7;
+            --accent-pink: #ec4899;
+            --accent-green: #10b981;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --text-tertiary: #71717a;
+            --border-color: #27272a;
+            --glow-cyan: rgba(0, 212, 255, 0.3);
+            --glow-purple: rgba(168, 85, 247, 0.3);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Animated Grid Background */
+        .bg-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(var(--border-color) 1px, transparent 1px),
+                linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
+            background-size: 50px 50px;
+            opacity: 0.3;
+            z-index: 0;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 32px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, var(--glow-cyan) 0%, transparent 70%);
+            transform: translate(-50%, -50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 60%;
+            right: 10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, var(--glow-purple) 0%, transparent 70%);
+            animation: pulse 8s ease-in-out infinite 2s;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.4; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.1); }
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 20px;
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 100px;
+            font-size: 0.9rem;
+            margin-bottom: 32px;
+            font-weight: 500;
+            color: var(--accent-cyan);
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent-cyan);
+            border-radius: 50%;
+            animation: pulseGlow 2s ease-in-out infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 1; box-shadow: 0 0 8px var(--accent-cyan); }
+            50% { opacity: 0.5; box-shadow: 0 0 20px var(--accent-cyan); }
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 16px;
+            letter-spacing: -0.03em;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-purple) 50%, var(--accent-pink) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-size: 200% 200%;
+            animation: gradientShift 8s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .hero-role {
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            font-weight: 500;
+        }
+
+        .hero-bio {
+            font-size: clamp(1.1rem, 2vw, 1.35rem);
+            color: var(--text-secondary);
+            max-width: 800px;
+            line-height: 1.7;
+            margin-bottom: 48px;
+        }
+
+        .highlight {
+            color: var(--accent-cyan);
+            font-weight: 600;
+            position: relative;
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-cyan);
+            box-shadow: 0 8px 24px rgba(0, 212, 255, 0.2);
+        }
+
+        .social-link svg {
+            transition: transform 0.3s ease;
+        }
+
+        .social-link:hover svg {
+            transform: scale(1.1);
+        }
+
+        /* Bento Grid */
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 24px;
+            padding: 80px 0;
+        }
+
+        .bento-item {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 40px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bento-item::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 24px;
+            padding: 1px;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .bento-item:hover::before {
+            opacity: 1;
+        }
+
+        .bento-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
+        }
+
+        .span-2 {
+            grid-column: span 2;
+        }
+
+        @media (max-width: 1200px) {
+            .span-2 {
+                grid-column: span 1;
+            }
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 32px;
+            background: linear-gradient(135deg, var(--text-primary), var(--text-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Expertise Cards */
+        .expertise-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .expertise-card {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 28px;
+            transition: all 0.3s ease;
+        }
+
+        .expertise-card:hover {
+            border-color: var(--accent-cyan);
+            transform: translateY(-4px);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+
+        .expertise-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .expertise-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .tech-stack {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tech-stack span {
+            padding: 4px 12px;
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 6px;
+            font-size: 0.8rem;
+            color: var(--accent-cyan);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Stats Card */
+        .stats-card {
+            background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .stat-badge {
+            font-size: 4rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+
+        .stats-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .stats-card p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        /* Publications Card */
+        .pub-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .pub-header h3 {
+            font-size: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .conference-badges {
+            display: flex;
+            gap: 8px;
+        }
+
+        .conf-badge {
+            padding: 4px 10px;
+            background: rgba(168, 85, 247, 0.15);
+            border: 1px solid rgba(168, 85, 247, 0.4);
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--accent-purple);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .publications-card p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .inline-link {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .inline-link:hover {
+            gap: 8px;
+            text-decoration: underline;
+        }
+
+        /* About Card */
+        .about-content {
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+
+        .about-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 24px;
+            color: var(--text-primary);
+        }
+
+        .about-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .about-icon {
+            font-size: 1.75rem;
+            flex-shrink: 0;
+        }
+
+        .about-item strong {
+            display: block;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+            font-size: 1rem;
+        }
+
+        .about-item p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Contact Card */
+        .contact-card {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(168, 85, 247, 0.05));
+        }
+
+        .contact-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 24px;
+            color: var(--text-primary);
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 20px;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .contact-method:hover {
+            border-color: var(--accent-cyan);
+            transform: translateX(4px);
+        }
+
+        .contact-icon {
+            font-size: 1.75rem;
+        }
+
+        .contact-method strong {
+            display: block;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .contact-method p {
+            color: var(--accent-cyan);
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 0;
+            border-top: 1px solid var(--border-color);
+            margin-top: 80px;
+        }
+
+        .footer-content {
+            text-align: center;
+        }
+
+        .footer-content p {
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .footer-meta {
+            font-size: 0.85rem;
+            color: var(--text-tertiary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                min-height: 80vh;
+            }
+
+            .social-links {
+                flex-direction: column;
+            }
+
+            .social-link {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .expertise-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+        }
+
+        /* Smooth animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .bento-item {
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+
+        .bento-item:nth-child(1) { animation-delay: 0.1s; }
+        .bento-item:nth-child(2) { animation-delay: 0.2s; }
+        .bento-item:nth-child(3) { animation-delay: 0.3s; }
+        .bento-item:nth-child(4) { animation-delay: 0.4s; }
+        .bento-item:nth-child(5) { animation-delay: 0.5s; }
+    </style>
+</body>
+</html>

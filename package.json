@@ -1,0 +1,15 @@
+{
+  "name": "pooryapzm-portfolio",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "deploy": "npm run build && cp -r dist/* . && git add -A && git commit -m 'Deploy updates' && git push",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.15.8"
+  }
+}
